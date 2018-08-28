@@ -1,0 +1,26 @@
+<div class="navbar navbar-inverse">
+    <div class="navbar-boxed">
+        <a class="navbar-brand" href="javascript:">学生工作平台</a>
+        <ul class="nav navbar-nav pull-right visible-xs-block">
+            <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div class="navbar navbar-default" id="navbar-second">
+    <div class="navbar-boxed">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="[ '/']">首页</a></li>
+                <li><a [routerLink]="[ '/master']">管理活动</a></li>
+                <li><a [routerLink]="[ '/organization']">我的活动</a></li>
+                <li><a [routerLink]="[ '/expert']">专家面板</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<router-outlet>
+
+</router-outlet>

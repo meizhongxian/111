@@ -1,0 +1,58 @@
+<div class="modal-header">
+  <h4 class="modal-title">设置全局审批流程</h4>
+  <button type="button" class="close" aria-label="Close" (click)="this.activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form>
+  <div class="table-responsive">
+
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>名称</th>
+        <th>总部</th>
+        <th>分部</th>
+        <th>学院</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>北京</td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+      </tr>
+      <tr>
+        <td>天津</td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+      </tr>
+      <tr>
+        <td>上海</td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+      </tr>
+      <tr>
+        <td>广东</td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+      </tr>
+      <tr>
+        <td>四川</td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+        <td><input type="checkbox" checked="checked"></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-danger">提交</button>
+    <button type="button" class="btn btn-default" (click)="this.activeModal.close()">取消</button>
+  </div>
+</form>

@@ -1,0 +1,437 @@
+<!-- Page header -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="page-title">
+      <h4>
+        <i class="icon-arrow-left52 position-left"></i>
+        <span class="text-semibold">活动标题</span>
+      </h4>
+      <ul class="breadcrumb breadcrumb-caret position-right">
+        <li>
+          <a [routerLink]="['/']">首页</a>
+        </li>
+        <li>
+          <a [routerLink]="['/master']">活动管理</a>
+        </li>
+        <li class="active">详情</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- /page header -->
+<div class="page-container no-margin-bottom no-padding-bottom">
+  <div class="page-content">
+    <div class="content-wrapper">
+
+
+      <div class="navbar navbar-default navbar-component" style="position: relative; z-index: 27;">
+        <div class="navbar-collapse collapse" id="navbar-navigation">
+          <ul class="nav navbar-nav">
+            <li>
+              <a [routerLink]="['/master/dashboard']">DashBoard</a>
+            </li>
+            <li>
+              <a [routerLink]="['/master/review']">审核设置</a>
+            </li>
+            <li>
+              <a [routerLink]="['/master/approval']">评选设置</a>
+            </li>
+            <li>
+              <a [routerLink]="['/master/statistics']">统计报表</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-container">
+  <div class="page-content">
+
+    <!-- Opposite sidebar -->
+    <div class="sidebar sidebar-main sidebar-default sidebar-separate">
+      <div class="sidebar-content">
+        <div class="sidebar-category">
+          <div class="category-title">
+            <span>评选设置</span>
+          </div>
+
+          <div class="category-content">
+            <h6 class="text-semibold heading-divided">
+              投票
+            </h6>
+            <dl>
+              <dt class="text-muted">投票开始时间</dt>
+              <dd>2018年2月10日</dd>
+              <dt class="text-muted">投票结束时间</dt>
+              <dd>2018年2月20日</dd>
+            </dl>
+          </div>
+          <div class="category-content">
+            <h6 class="text-semibold heading-divided mt-15">
+              专家评选
+            </h6>
+
+            <dl>
+              <dt class="text-muted">评选开始时间</dt>
+              <dd>2018年2月10日</dd>
+              <dt class="text-muted">评选结束时间</dt>
+              <dd>2018年2月20日</dd>
+              <dt class="text-muted">每人最大评选数量</dt>
+              <dd>15 个</dd>
+              <dt class="text-muted">每作品需几位专家评选</dt>
+              <dd>3 位</dd>
+              <dt class="text-muted">评选方式</dt>
+              <dd>通过/不通过</dd>
+            </dl>
+          </div>
+          <div class="category-content">
+            <button type="button" class="btn btn-primary btn-block" (click)="this.Create()">设置评选方式</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- /opposite sidebar -->
+
+    <div class="content-wrapper">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            管理专家
+          </h6>
+          <div class="heading-elements">
+            <div class="heading-btn">
+              <button type="button" class="btn btn-primary ">新建专家组</button>
+              <button type="button" class="btn btn-primary">自动分配评选内容</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="panel-body">
+          <h6 class="text-semibold heading-divided">
+            <i class="icon-folder6 position-left"></i> 专家组一
+            <small class="position-right">(93)</small>
+            <div class="btn-group pull-right">
+              <button class="btn btn-link" type="button">编辑</button>
+              <button class="btn btn-link" type="button">删除</button>
+            </div>
+          </h6>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-pencil5"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">姓名
+                    <small class="display-block">职称</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center no-shadow">
+                  <h6 class="text-semibold no-margin">Nathan Jacobson
+                    <small class="display-block">Lead UX designer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Margo Baker
+                    <small class="display-block">Sales manager</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Barbara Walden
+                    <small class="display-block">SEO specialist</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">
+                    <i class="icon-medal2"></i> Alexander
+                    <small class="display-block">Lead developer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Nathan Jacobson
+                    <small class="display-block">Lead UX designer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6 class="text-semibold heading-divided">
+            <i class="icon-folder6 position-left"></i> 专家组二
+            <small class="position-right">(93)</small>
+            <div class="btn-group pull-right">
+              <button class="btn btn-link" type="button">编辑</button>
+              <button class="btn btn-link" type="button">删除</button>
+            </div>
+          </h6>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">姓名
+                    <small class="display-block">职称</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center no-shadow">
+                  <h6 class="text-semibold no-margin">Nathan Jacobson
+                    <small class="display-block">Lead UX designer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Margo Baker
+                    <small class="display-block">Sales manager</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Barbara Walden
+                    <small class="display-block">SEO specialist</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">
+                    <i class="icon-medal2"></i> Alexander
+                    <small class="display-block">Lead developer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="thumbnail no-border no-shadow">
+                <div class="thumb thumb-rounded">
+                  <img src="assets/images/placeholder.jpg" alt="">
+                  <div class="caption-overflow">
+                    <span>
+                      <a href="javascript:" class="btn bg-danger-400 btn-icon btn-xs" data-popup="lightbox">
+                        <i class="icon-bin"></i>
+                      </a>
+                      <a href="javascript:" class="btn bg-success-400 btn-icon btn-xs">
+                        <i class="icon-medal2"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="caption text-center">
+                  <h6 class="text-semibold no-margin">Nathan Jacobson
+                    <small class="display-block">Lead UX designer</small>
+                  </h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

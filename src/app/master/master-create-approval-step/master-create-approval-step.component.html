@@ -1,0 +1,81 @@
+<div class="modal-header">
+  <h4 class="modal-title">创建评选步骤</h4>
+  <button type="button" class="close" aria-label="Close" (click)="this.activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form>
+  <div class="modal-body">
+
+
+    <div class="form-group">
+      <label>是否需要投票</label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="Vote" [(ngModel)] ="this.Vote">
+          需要
+        </label>
+      </div>
+    </div>
+
+
+
+    <div *ngIf="this.Vote">
+      <div class="form-group">
+        <label>投票开始时间</label>
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>投票结束时间</label>
+        <input type="date" class="form-control">
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <label>专家参与评选</label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="Expert" [(ngModel)]="this.Expert">
+          参与
+        </label>
+      </div>
+    </div>
+
+    <div *ngIf="this.Expert">
+      <div class="form-group">
+        <label>评选方式</label>
+        <select class="form-control">
+          <option>通过/不通过</option>
+          <option>评分</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>专家评选开始时间</label>
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>专家评选结束时间</label>
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>每专家评选数量</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label>每项需几位专家评分</label>
+        <input type="text" class="form-control">
+      </div>
+
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-danger">提交</button>
+    <button type="button" class="btn btn-default" (click)="this.activeModal.close()">取消</button>
+  </div>
+</form>

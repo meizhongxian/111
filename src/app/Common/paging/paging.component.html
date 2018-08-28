@@ -1,0 +1,12 @@
+<ul class="pager pager-xs pull-right">
+    <li class="disabled"><a href="javascript:" class="legitRipple">共有：{{AllCount}}条数据</a></li>
+    <li class="disabled legitRipple"><a href="javascript:" class="legitRipple">分页：{{PageNum}}/{{PageCount}}</a></li>
+    <li class="pgNext" [class.disabled]="PageNum<=1"><a href="javascript:" class="legitRipple"
+                          (click)="this.LoadPage(1)">首页</a></li>
+    <li class="pgNext" [class.disabled]="PageNum <=1"><a href="javascript:" class="legitRipple"
+                          (click)="this.LoadPage(this.PageNum-1)">上一页</a></li>
+    <li class="pgNext" [class.disabled]="PageNum===this.PageCount"><a href="javascript:" class="legitRipple"
+                          (click)="this.LoadPage(this.PageNum+1)">下一页</a></li>
+    <li class="pgNext" [class.disabled]="PageNum===this.PageCount"><a href="javascript:" class="legitRipple"
+                          (click)="this.LoadPage(this.PageCount)">末页</a></li>
+</ul>

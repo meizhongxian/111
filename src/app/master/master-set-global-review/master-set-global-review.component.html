@@ -1,0 +1,64 @@
+<div class="modal-header">
+  <h4 class="modal-title">设置全局审批流程</h4>
+  <button type="button" class="close" aria-label="Close" (click)="this.activeModal.close()">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form>
+  <div class="modal-body">
+
+    <div class="form-group">
+      <label for="">请选择参与审核的机构级别</label>
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" checked="checked" >
+          总部
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" checked="checked">
+          分部
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" checked="checked">
+          学院
+        </label>
+      </div>
+    </div>
+
+      <!--<div class="panel panel-flat" *ngFor="let item of this.Steps;let i=index">-->
+          <!--<div class="panel-body">-->
+              <!--<div class="form-group">-->
+                  <!--<label for="">机构类型</label>-->
+                  <!--<select class="form-control">-->
+                      <!--<option value="">总部</option>-->
+                      <!--<option value="">分部</option>-->
+                      <!--<option value="">学院</option>-->
+                      <!--<option value="">教学点</option>-->
+                  <!--</select>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                  <!--<label for="">未通过时的操作</label>-->
+                  <!--<select class="form-control">-->
+                      <!--<option value="">退回</option>-->
+                      <!--<option value="">删除</option>-->
+                  <!--</select>-->
+              <!--</div>-->
+              <!--<button type="button" class="btn btn-danger" (click)="this.Remove(i)">删除</button>-->
+          <!--</div>-->
+      <!--</div>-->
+
+
+      <!--<button type="button" class="btn btn-primary" (click)="this.Add()">增加</button>-->
+
+
+
+  </div>
+  <div class="modal-footer">
+      <button type="submit" class="btn btn-danger">提交</button>
+      <button type="button" class="btn btn-default" (click)="this.activeModal.close()">取消</button>
+  </div>
+</form>

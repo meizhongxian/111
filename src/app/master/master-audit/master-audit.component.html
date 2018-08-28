@@ -1,0 +1,71 @@
+<div class="modal-header">
+  <h4 class="modal-title">审核</h4>
+  <button type="button" class="close" aria-label="Close" (click)="this.activeModal.close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+  <div class="modal-body form-horizontal">
+    <div class="content-group">
+      <img src="assets/images/placeholder.jpg" class="img-responsive"/>
+    </div>
+
+    <dl class="dl-horizontal mb-15">
+      <dt>姓名</dt>
+      <dd>姓名</dd>
+      <dt>联系方式</dt>
+      <dd>联系方式</dd>
+    </dl>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          附件
+        </h6>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <td style="width:100px;">类型</td>
+            <td>文件名</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>图片</td>
+            <td><a href="javascript:">abc.jpg</a></td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td><a href="javascript:">abc.docs</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+<form>
+  <div class="modal-body">
+    <div class="form-group">
+      <label></label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 通过
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 不通过
+      </label>
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" rows="10"></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-danger">提交</button>
+    <button type="button" class="btn btn-default" (click)="this.activeModal.close()">取消</button>
+  </div>
+</form>

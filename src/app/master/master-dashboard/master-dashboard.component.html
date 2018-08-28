@@ -1,0 +1,237 @@
+<!-- Page header -->
+<div class="page-header">
+	<div class="page-header-content">
+		<div class="page-title">
+			<h4>
+				<i class="icon-arrow-left52 position-left"></i>
+				<span class="text-semibold">活动标题</span>
+			</h4>
+			<ul class="breadcrumb breadcrumb-caret position-right">
+				<li>
+					<a [routerLink]="['/']">首页</a>
+				</li>
+				<li>
+					<a [routerLink]="['/master']">活动管理</a>
+				</li>
+				<li class="active">详情</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- /page header -->
+<div class="page-container no-margin-bottom no-padding-bottom">
+	<div class="page-content">
+		<div class="content-wrapper">
+
+
+			<!-- Search field -->
+			<div class="panel panel-flat">
+				<div class="panel-heading">
+					<h5 class="panel-title">搜索报名信息</h5>
+					<div class="heading-elements">
+						<ul class="icons-list">
+							<li>
+								<a data-action="collapse"></a>
+							</li>
+							<li>
+								<a data-action="close"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel-body">
+					<form action="#" class="main-search">
+						<div class="input-group content-group">
+							<div class="has-feedback has-feedback-left">
+								<input type="text" class="form-control input-xlg">
+								<div class="form-control-feedback">
+									<i class="icon-search4 text-muted text-size-base"></i>
+								</div>
+							</div>
+
+							<div class="input-group-btn">
+								<button type="submit" class="btn btn-primary btn-xlg">搜索</button>
+							</div>
+						</div>
+
+						<div class="row search-option-buttons">
+							<div class="col-sm-12">
+								<ul class="list-inline list-inline-condensed no-margin-bottom">
+									<li>
+										<a [routerLink]="['/master/dashboard']" class="btn btn-link btn-sm">DashBoard</a>
+									</li>
+									<li>
+										<a [routerLink]="['/master/review']" class="btn btn-link btn-sm">审核设置</a>
+									</li>
+									<li>
+										<a [routerLink]="['/master/approval']" class="btn btn-link btn-sm">评选设置</a>
+									</li>
+									<li>
+										<a [routerLink]="['/master/statistics']" class="btn btn-link btn-sm">统计报表</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- /search field -->
+		</div>
+	</div>
+</div>
+
+
+<div class="page-container">
+	<div class="page-content">
+
+		<!-- Opposite sidebar -->
+		<div class="sidebar sidebar-main sidebar-default sidebar-separate">
+			<div class="sidebar-content">
+
+				<div class="sidebar-category">
+					<div class="category-title">
+						<span>数据摘要</span>
+					</div>
+
+					<div class="category-content text-center">
+						<div class="media">
+							<div class="media-left media-middle">
+								<i class="icon-pointer icon-3x text-success-400"></i>
+							</div>
+
+							<div class="media-body text-right">
+								<h3 class="no-margin text-semibold">652,549</h3>
+								<span class="text-uppercase text-size-mini text-muted">报名人数</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar-category">
+					<div class="category-title">
+						<span>活动流程</span>
+					</div>
+
+					<div class="category-content">
+						<ul class="list-feed">
+							<li class="border-success-400">
+								<div class="text-muted text-size-small mb-5">2018-02-01</div>
+								活动报名开始
+							</li>
+							<li class="border-success-400">
+								<div class="text-muted text-size-small mb-5">2018-02-15</div>
+								活动报名截至
+							</li>
+							<li class="border-success-400">
+								<div class="text-muted text-size-small mb-5">2018-02-20</div>
+								第一轮评选开始
+							</li>
+							<li class="border-success-400">
+								<div class="text-muted text-size-small mb-5">2018-02-28</div>
+								第一轮评选结束
+							</li>
+							<li class="border-warning-400">
+								<div class="text-muted text-size-small mb-5">2018-03-05</div>
+								结果公布
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /opposite sidebar -->
+
+		<div class="content-wrapper">
+
+			<ul class="nav nav-lg nav-tabs nav-tabs-bottom search-results-tabs" id="StateFilter">
+				<li id="All" class="active" data-statecode="0">
+					<a href="javascript:">全部</a>
+				</li>
+				<li id="CheckPending" data-statecode="1">
+					<a href="javascript:">待审核</a>
+				</li>
+				<li id=“Pass” data-statecode="2">
+					<a href="javascript:">已通过</a>
+				</li>
+				<li id="NoPass" data-statecode="3">
+					<a href="javascript:">未通过</a>
+				</li>
+			</ul>
+
+			<div class="panel panel-flat">
+				<div class="panel-heading">
+					<h6 class="panel-title">
+						报名信息（优秀毕业生）
+					</h6>
+				</div>
+
+				<div class="table-responsive">
+					<table class="table text-nowrap">
+						<thead>
+							<tr>
+								<th>学号</th>
+								<th>姓名</th>
+								<th>学习中心</th>
+								<th>入学时间</th>
+								<th>本/专科</th>
+								<th>必修平均分</th>
+								<th>其他平均分</th>
+								<th>毕业论文成绩</th>
+								<th>状态</th>
+								<th class="text-center">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>000000</td>
+								<td>六个字的名字</td>
+								<td>学习中心名称</td>
+								<td>201703</td>
+								<td>本科</td>
+								<td>80.5</td>
+								<td>80.5</td>
+								<td>70.5</td>
+								<td>待审核</td>
+								<td class="text-center">
+									<button class="btn btn-primary" type="button" (click)="this.Audit()">
+										审核
+									</button>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="10">
+									<ul class="pager pager-xs pull-right">
+										<li class="disabled">
+											<a href="javascript:" class="legitRipple">共有：12条数据</a>
+										</li>
+										<li class="disabled legitRipple">
+											<a href="javascript:" class="legitRipple">分页：1/2</a>
+										</li>
+										<li class="pgNext disabled">
+											<a href="javascript:" class="legitRipple">首页</a>
+										</li>
+										<li class="pgNext disabled">
+											<a href="javascript:" class="legitRipple">上一页</a>
+										</li>
+										<li class="pgNext">
+											<a href="javascript:" class="legitRipple">下一页</a>
+										</li>
+										<li class="pgNext">
+											<a href="javascript:" class="legitRipple">末页</a>
+										</li>
+									</ul>
+
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
